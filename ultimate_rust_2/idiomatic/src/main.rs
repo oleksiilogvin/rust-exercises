@@ -1,12 +1,12 @@
-const PI: f32 = std::f32::consts::PI;
+use std::f32::consts::PI;
 
 fn count_to_5() -> i32 {
-    let mut foo = 0;
+    let mut counter = 0;
     loop {
-        if foo > PI as i32 && foo > 5 {
+        if counter > PI as i32 && counter > 5 {
             break;
         }
-        foo += 1;
+        counter += 1;
     }
     5
 }
